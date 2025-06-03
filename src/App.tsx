@@ -115,9 +115,9 @@ export default function App(): JSX.Element {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
-      <div className="relative w-full max-w-2xl bg-white shadow-lg rounded-lg p-8 flex flex-col">
-        {results === null ? (
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
+  <div className="relative w-full max-w-2xl bg-white shadow-lg rounded-lg p-4 sm:p- md:p-8 flex flex-col">
+    {results === null ? (
           <>
             <div className="relative">
               <button
@@ -143,10 +143,10 @@ export default function App(): JSX.Element {
               </div>
 
               <div
-                className={`flex flex-row justify-around gap-4 mb-8 transition-opacity duration-300 ease-in-out ${
-                  visible ? "opacity-100" : "opacity-0"
-                }`}
-              >
+  className={`flex flex-wrap justify-center gap-4 mb-8 transition-opacity duration-300 ease-in-out ${
+    visible ? "opacity-100" : "opacity-0"
+  }`}
+>
                 {currentQuestion.answers.map((a) => {
                   const isSelected =
                     currentQuestion.selectedValue === a.value;
@@ -155,10 +155,10 @@ export default function App(): JSX.Element {
                     : valueToBg(a.value);
                   return (
                     <button
-                      key={a.value}
-                      onClick={() => handleAnswer(a.value)}
-                      className={`px-4 py-2 w-24 rounded text-center text-gray-800 ${bgClass}`}
-                    >
+        key={a.value}
+        onClick={() => handleAnswer(a.value)}
+        className={`px-3 py-2 w-20 md:w-24 rounded text-center text-gray-800 text-sm md:text-base ${bgClass}`}
+      >
                       {a.label}
                     </button>
                   );
