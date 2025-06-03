@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+@import "tailwindcss";
+
+html,p,h2,h3,body {
+  font-family: 'Assistant', sans-serif;
+}
