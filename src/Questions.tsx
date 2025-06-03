@@ -1,6 +1,6 @@
 const answers=[
-    { label: "לא מסכים", value: "1" },
-    { label: "מסכים", value: "2" },
+    { label: "לא מסכים בכלל", value: "1" },
+    { label: "קצת מסכים", value: "2" },
     { label: "נייטרלי", value: "3" },
     { label: "מסכים", value: "4" },
     { label: "מאוד מסכים", value: "5" }
