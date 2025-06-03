@@ -6,7 +6,7 @@ const answers=[
     { label: "מאוד מסכים", value: "5" }
   ]
 
-
+  
 
 export interface Answer {
   label: string;
