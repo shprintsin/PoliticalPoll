@@ -1,5 +1,5 @@
 // src/App.tsx
-import React, { useState, useEffect, type JSX } from "react";
+import { useState, useEffect, type JSX } from "react";
 import "./App.css";
 import {
   type Question,
@@ -7,7 +7,6 @@ import {
   type Results,
 } from "./Questions";
 import { FaGavel, FaLandmark, FaMoneyBill, FaUsers } from "react-icons/fa";
-import { GiTank } from "react-icons/gi";
 
 // Predefined mapping of category keys to Hebrew label and icon
 const catLabels: Record<
